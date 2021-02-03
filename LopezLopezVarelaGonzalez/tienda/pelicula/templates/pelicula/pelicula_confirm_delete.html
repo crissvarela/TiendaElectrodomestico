@@ -1,0 +1,38 @@
+{% extends "base_generic.html" %}
+{% block content %}
+<div class="container-fluid">
+  <div style="text-align: center; background-color: beige;">
+    <br>
+    <br>
+    <h1 style="color: rgb(255, 8, 8);">¡¡¡¡¡ Advertencia Esta Seguro De Borrar La Pelicula !!!!!</h1>
+      <div style="color: chocolate;">
+        <br>
+        <br>
+        <p style="font-size: 30px;">Estas seguro que quieres borrar la pelcula</p>
+        <br>
+        <p style="font-size: 20px;">{{ pelicula }}</p>
+        <br>
+        <br>
+        <br>
+        <p style="font-size: 30px;">Con el autor</p>
+        <br>
+        <p style="font-size: 20px;">{{ pelicula.autor }}</p>
+        <br>
+        <br>
+        <br>
+        <p style="font-size: 30px;">Con el genero</p>
+        <br>
+        <p style="font-size: 20px;">{{ pelicula.genero }}</p>
+        <br>
+        <br>
+        <br>
+        <form action="" method="POST">
+          {% csrf_token %}
+          <input type="submit" action="" value="Yes, delete." />
+        </form>
+      </div>
+      <br>
+      <br>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "base_generic.html" %}
+{% block content %}
+<div class="container-fluid">
+    <div style="background-color:beige; text-align: center; ">
+        <br>
+        <h1 style="color: brown; font-size: 50px;">Director</h1>
+        <br>
+        <br>
+        <div style="color: chocolate;">
+            <p style="font-size: 30px;">Nombre Director</p>
+            <p style="font-size: 20px;">{{ author.nombre }}</p>
+        </div>
+        <br>
+        <div style="color: chocolate;">
+            <p style="font-size: 30px;">Apellido Director</p>
+            <p style="font-size: 20px;">{{ author.apellido }}</p>
+        </div>
+        <br>
+        <div style="color: chocolate;">
+            <p style="font-size: 30px;">Fecha Estreno</p>
+            <p style="font-size: 20px;">{{ author.fecha_producida }}</p>
+        </div>
+        <br>
+        <div style="text-align: center;"> 
+            <a href="{% url 'author_list' %}" class="btn btn-primary">Volver</a>
+        </div>
+        <br>
+        <br>
+        <br>
+    </div>
+</div>
+{% endblock %}

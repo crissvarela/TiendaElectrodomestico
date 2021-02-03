@@ -1,0 +1,34 @@
+{% extends "base_generic.html" %}
+{% block content %}
+<div class="container-fluid">
+    <div style="background-color:beige; text-align: center; ">
+        <br>
+        <h1 style="color: brown; font-size: 50px;">Pelicula</h1>
+        <br>
+        <h2>Titulo</h2>
+        <h2>{{ pelicula }}</h2>
+        <br>
+        <div style="color: chocolate;">
+            <p style="font-size: 30px;">Descripcion</p>
+            <p style="font-size: 20px;">{{ pelicula.descripcion }}</p>
+        </div>
+        <br>
+        <div style="color: chocolate;">
+            <p style="font-size: 30px;">Autor</p>
+            <p style="font-size: 20px;">{{ pelicula.autor }}</p>
+        </div>
+        <br>
+        <div style="color: chocolate;">
+            <p style="font-size: 30px;">Genero</p>
+            <p style="font-size: 20px;">{{ pelicula.genero }}</p>
+        </div>
+        <br>
+        <div style="text-align: center;"> 
+            <a href="{% url 'pelicula_list' %}" class="btn btn-primary">Volver</a>
+        </div>
+        <br>
+        <br>
+        <br>
+    </div>
+</div>
+{% endblock %}

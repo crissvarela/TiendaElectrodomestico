@@ -1,0 +1,138 @@
+{% extends "base_generic.html" %}
+{% block content %}
+{% load static %}
+<head>
+<style>
+  body {
+    font-family: Arial;
+  }
+
+  input {
+    float: left;
+    width: 200px;
+    margin-bottom: 10px;
+  }
+
+  label {
+    clear: both;
+    float: left;
+    width: 180px;
+  }
+
+  button {
+    clear: both;
+    float: left;
+    width: 60px;
+  }
+
+  .error-control {
+    border: 1px solid red;
+  }
+
+  label.error {
+    color: red;
+    width: 300px;
+    font-size: 0.8em;
+    margin-top: -5px;
+    margin-bottom: 10px;
+  }
+</style>
+<script>
+  $(function () {
+    $("#mi-formulario").validate({
+      rules: {
+        email: {
+          required: true,
+          email: true
+        },
+        nombre: "requiered",
+        password: "required",
+        fono: "required",
+        fecha: "required",
+        password2: {
+          required: true,
+          equalTo: "#password"
+        }
+      }, //rules
+      messages: {
+        nombre: {
+          required: 'Ingresa tu nombre',
+          email: 'Caracteres insuficientes'
+        },
+        email: {
+          required: 'Ingresa tu correo electrónico',
+          email: 'Formato de correo no válido'
+        },
+        password: {
+          required: 'Ingresa una contraseña',
+          minlength: 'Caracteres insuficientes'
+        },
+        fono: {
+          required: 'Ingrese un número de celular',
+          minlength: 'Cantidad de digitos insuficiente'
+        },
+        fecha: {
+          required: 'Seleccione una fecha válida',
+          min: 'Fecha no corresponde'
+        },
+        password2: {
+          required: 'Reingresa la contraseña',
+          equalTo: 'Las contraseñas ingresadas no coinciden',
+          minlength: 'Caracteres insuficientes'
+        }
+      }//messages
+    }); //$('#mi-formulario').validate
+  }); //function
+</script>
+</head>
+<body>
+  <main>
+    <section>
+      <div class="row" style="width: 100%;">
+        <div class="container p-4 my-3 border col-sm-6" style="background-color: azure;">
+          <h3>Registrate si quieres mas informacion</h3>
+          <form id="mi-formulario" method="POST" action="{% url 'index' %}">
+
+
+            <label>Nombre Completo: </label>
+            <input type="text" name="nombre" required placeholder="Ingrese su nombre">
+            <br>
+
+            <label>Correo Electrónico: </label>
+            <input type="text" name="email" required placeholder="nombre@dominio.cl">
+
+            <label>Telefono: </label>
+            <input type="text" name="fono" minlength="9" required>
+
+            <label>Fecha de nacimiento: </label>
+            <input type="date" name="fecha" min="2018-01-01" required>
+
+            <label>Contraseña:</label>
+            <input type="password" id="password" name="password" minlength="6">
+
+            <label>Reingresa contraseña: </label>
+            <input type="password" name="password2" minlength="6">
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </main>
+</body>
+{% endblock %}

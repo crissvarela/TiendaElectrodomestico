@@ -1,0 +1,250 @@
+{% extends "base_generic.html" %}
+{% block content %}
+
+{% load static %}
+<body>
+  <section>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#demo" data-slide-to="3"></li>
+        <li data-target="#demo" data-slide-to="4"></li>
+      </ul>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{% static 'img/carrusel1.jpg' %}" alt="Los Angeles" height="600">  
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'img/carrusel2.jpg' %}" alt="Chica"  height="600">
+          <div class="carousel-caption">
+            <h3>Linea Blanca</h3>
+          </div>   
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'img/carrusel3.jpg' %}" alt="Chica"  height="600">
+          <div class="carousel-caption">
+            <h3>Decora Tu cocina con lo mejor</h3>
+          </div>   
+        </div>
+        
+        <div class="carousel-item">
+          <img src="{% static 'img/carrusel5.jpg' %}" alt="New York" height="600">
+          <div class="carousel-caption">
+            <h3 style="color: black;">Hazte socio y acumula electroPuntos</h3>
+          </div>   
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#demo" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="false"></span>
+      </a>
+    </div>
+  </section>
+  <main>
+    <div class="album py-5" style="background:darkslategrey;" >
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" src="{% static 'img/imagen 1.jpg' %}" width="100%" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+              <div class="card-body">
+                <h1 class="tituloR">Lavadora</h1>
+                <p class="card-text">                 
+                  <li>Capacidad de carga: 16 Kg</li>
+                  <li>Tipo de carga: Superior</li>
+                  <li>Material del tambor: Acero inoxidable</li>
+                  <li>Tecnología: No inverter</li>
+                  <li>Número de programas: 8</li>
+                  <h3 style="color: red;">$ 269.990</h3>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" src="{% static 'img/imagen 2.jpg' %}" width="100%" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+              <div class="card-body">
+                <h1 class="tituloR">Refrigerador</h1>
+                <p class="card-text"> 
+                  <li>Eficiencia energética: A+</li>
+                  <li>Capacidad total útil: 300 lt</li>
+                  <li>No Frost: Sí</li>
+                  <li>Ice maker interior: No</li>
+                  <li>Material de las bandejas: Acrílico</li>
+                  <h3 style="color: red;">$ 369.990</h3>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" src="{% static 'img/imagen 3.jpg' %}" width="100%" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+              <div class="card-body">
+                <h1 class="tituloR">Licuadora</h1>
+                <p class="card-text">
+                  <li>Capacidad (lt): 1.5 lt</li>
+                  <li>Número de velocidades: 12</li>
+                  <li>Apto para lavavajillas: Sí</li>
+                  <li>Material del recipiente: Vidrio</li>
+                  <li>Material de las cuchillas: Acero inoxidable</li>
+                  <h3 style="color: red;">$ 89.990</h3>
+                </p>
+                </div>
+              </div>
+            </div>
+          <br>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" src="{% static 'img/imagen 4.jpg' %}" width="100%" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+              <div class="card-body">
+                <h1 class="tituloR">Cocina</h1>
+                <p class="card-text">
+                  <li>Número de quemadores: 5</li>
+                  <li>Material de la parrilla: Hierro</li>
+                  <li>Material de la cubierta: Acero inoxidable</li>
+                  <li>Horno autolimpiante: No</li>
+                  <li>Grill: Sí</li>
+                  <h3 style="color: red;">$ 399.990</h3>
+                </p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" src="{% static 'img/imagen 5.jpg' %}" width="100%" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+              <div class="card-body">
+                <h1 class="tituloR">Tostadora electrica</h1>
+                <p class="card-text">
+                  <li>Apagado automático: Sí</li>
+                  <li>Bandeja recogemigas: Sí</li>
+                  <li>Capacidad de panes: 2</li>
+                  <li>Potencia: 750W</li>
+                  <li>Niveles de tostado: 7</li>
+                  <h3 style="color: red;">$ 12.990</h3>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" src="{% static 'img/imagen 6.jpg' %}" width="100%" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+              <div class="card-body">
+                <h1 class="tituloR">Aspiradora</h1>
+                <p class="card-text">
+                  <li>Material del cuerpo: Plástico</li>
+                  <li>Sistema de recolección: Tambor</li>
+                  <li>Inalámbrica: No</li>
+                  <li>Capacidad (lt): 20 litros</li>
+                  <li>Aspira agua: Sí</li>
+                  <h3 style="color: red;">$ 69.990</h3>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" src="{% static 'img/imagen 7.jpg' %}" width="100%" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+              <div class="card-body">
+                <h1 class="tituloR">Horno electrico</h1>
+                <p class="card-text">
+                  <li>Capacidad (lt): 26 lt</li>
+                  <li>Temperatura máxima: 250C°</li>
+                  <li>Timer: Sí</li>
+                  <li>Potencia: 1500W</li>
+                  <li>Modelo: UT-BACKOFEN26</li>
+                  <h3 style="color: red;">$ 44.990</h3>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" src="{% static 'img/imagen 8.jpg' %}" width="100%" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+              <div class="card-body">
+                <h1 class="tituloR">Microondas</h1>
+                <p class="card-text">
+                  <li>Capacidad (lt): 40 LT</li>
+                  <li>Bloqueo de seguridad: Sí</li>
+                  <li>Niveles de potencia: 10</li>
+                  <li>Potencia: 1500 w</li>
+                  <li>Modelo: MG402MADXBB/ZS</li>
+                  <h3 style="color: red;">$ 169.990</h3>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" src="{% static 'img/imagen 9.jpg' %}" width="100%" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+              <div class="card-body">
+                <h1 class="tituloR">Juguera</h1>
+                <p class="card-text">
+                  <li>Pulsador: No</li>
+                  <li>Tipo: Licuadoras</li>
+                  <li>Profundidad: 54</li>
+                  <li>Potencia: CHILE</li>
+                  <li>Peso: 8.68</li>
+                  <h3 style="color: red;">$ 14.990</h3>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" src="{% static 'img/imagen 10.jpg' %}" width="100%" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+              <div class="card-body">
+                <h1 class="tituloR">Calefactor</h1>
+                <p class="card-text">
+                  <li>Temporada: Toda temporada</li>
+                  <li>Sistema de seguridad antivuelco: Sí</li>
+                  <li>Incluye ruedas: Sí</li>
+                  <li>Ancho: 13 cm</li>
+                  <li>Peso: 4.5 kg</li>
+                  <h3 style="color: red;">$ 19.990</h3>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" src="{% static 'img/imagen 11.jpg' %}" width="100%" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+              <div class="card-body">
+                <h1 class="tituloR">Television smart tv</h1>
+                <p class="card-text"> 
+                  <li>WiFi direct: SÍ</li>
+                  <li>WiFi direct: SÍ</li>
+                  <li>Tipo de pantalla: Plana</li>
+                  <li>Tecnología: LED</li>
+                  <li>Tasa de refresco nativa: 60 Hz</li>
+                  <h3 style="color: red;">$ 399.990</h3>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" src="{% static 'img/imagen 12.jpg' %}" width="100%" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+              <div class="card-body">
+                <h1 class="tituloR">Lavavajillas</h1>
+                <p class="card-text">
+                  <li>Capacidad del lavavajillas: 14 cubiertos</li>
+                  <li>Número de programas: 6</li>
+                  <li>Incluye triturador de alimentos: No</li>
+                  <li>Número de canastos de cubiertos: 1</li>
+                  <li>Niveles de temperatura: No aplica</li>
+                  <h3 style="color: red;">$ 379.990</h3>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+{% endblock %}
